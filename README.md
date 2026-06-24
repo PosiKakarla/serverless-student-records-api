@@ -79,15 +79,15 @@ Prerequisites
 * Basic understanding of Python
 
 **Steps to Reproduce**
-1.Create DynamoDB table StudentRecords with student_id (String) as partition key
-2.Create Lambda function studentRecordsHandler (Python 3.12)
-3.Paste Lambda code from lambda_function.py
-4.Attach IAM inline policy to Lambda role
-5.Create REST API in API Gateway
-6.Create resources: /student (POST) and /student/{id} (GET, DELETE)
-7.Enable Lambda Proxy Integration on all methods
-8.Deploy to prod stage
-9.Test using curl commands above
+* Create DynamoDB table StudentRecords with student_id (String) as partition key
+* Create Lambda function studentRecordsHandler (Python 3.12)
+* Paste Lambda code from lambda_function.py
+* Attach IAM inline policy to Lambda role
+* Create REST API in API Gateway
+* Create resources: /student (POST) and /student/{id} (GET, DELETE)
+* Enable Lambda Proxy Integration on all methods
+* Deploy to prod stage
+* Test using curl commands above
 
 **Monitoring**
 * CloudWatch log group: /aws/lambda/studentRecordsHandler
